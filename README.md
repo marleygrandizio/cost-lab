@@ -4,7 +4,7 @@ A browser-only, responsive pricing and cost model for the unnamed concert-stream
 
 ## Run locally
 
-Serve this folder over HTTP (the dashboard loads its bundled JSON with `fetch`):
+Serve this folder over HTTP (the dashboard loads its bundled JSON-formatted data files with `fetch`):
 
 ```sh
 python3 -m http.server 8000
@@ -24,9 +24,9 @@ Open `http://localhost:8000/` when the command is run inside this directory.
 
 ## Evidence and assumptions
 
-Official source references and check dates are bundled in `data/cost_model.json`. Stripe's published US online-card fee and AWS IVS usage prices are researched references. BLS May 2025 wage medians are employee-wage references, not contractor quotes. Hours, event audience allocation, rights shares, production budgets, marketing, insurance, and legal budgets are marked estimated or illustrative. No generic music rights rate is asserted.
+Official source references and check dates are bundled in `data/cost_model.txt`. Stripe's published US online-card fee and AWS IVS usage prices are researched references. BLS May 2025 wage medians are employee-wage references, not contractor quotes. Hours, event audience allocation, rights shares, production budgets, marketing, insurance, and legal budgets are marked estimated or illustrative. No generic music rights rate is asserted.
 
-The imported Mission 1 competitive dataset is stored separately at `data/competitor_data.json` and retains the October 27, 2026 research snapshot. Competitor prices may have changed.
+The imported Mission 1 competitive dataset is stored separately at `data/competitor_data.txt` and retains the October 27, 2026 research snapshot. Competitor prices may have changed.
 
 ## Venture website fields
 
